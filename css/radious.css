@@ -12,11 +12,24 @@ body{
     align-items: center;
     height: 100vh;
 }
+.container{
+    display: flex;
+}
+.container .square:nth-child(1):hover span{
+    background-color: dodgerblue;
+}
+.container .square:nth-child(2):hover span{
+    background-color: crimson;
+}
+.container .square:nth-child(3):hover span{
+    background-color: yellowgreen;
+}
+
 .square{
     width: 400px;
     height: 400px;
     position: relative;
-
+    margin: 20px;
 }
 .square span{
     position:absolute;
@@ -35,8 +48,8 @@ body{
     animation : circle 6s linear infinite;
 }
 .square span:nth-child(2){
-    animation : circle 4s linear infinite;
-    animation-direction: reverse;
+    animation : circle 4s linear infinite reverse;
+    /* animation-direction: reverse; */
 }
 .square span:nth-child(3){
     animation : circle 10s linear infinite;
