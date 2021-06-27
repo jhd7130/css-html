@@ -48,7 +48,7 @@ body{
     50%{
         top: calc(100% - 10px);
         left: calc(100% - 10px);
-        background-color: orange;
+        background-color: red;
     }
     75%{
         top: calc(100% - 10px);
