@@ -1,5 +1,47 @@
 /* Google web font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 body{
-    
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #222;
+    line-height: 1.5em;
+}
+a{
+    color: #222;
+    text-decoration: none;
+}
+
+.dropdown{
+    display: inline-block;
+    width: 300px;
+}
+.dropdown-btn{
+    width: inherit;
+    /* 부모요소의 것을 그대로 상속받아 사용하겠다. */
+    padding: 10px;
+    font-size: 20px;
+    background-color: yellowgreen;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+.dropdown-submenu{
+    display: none;
+    width: inherit;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+}
+.dropdown-submenu a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dropdown-submenu a:hover{
+    background-color: #eee;
+
+}
+
+.dropdown:hover .dropdown-submenu{
+    /* 해당 요소에 마우스를 올렸을 때 뒤의 자식 요소에 적용된다. */
+    display: block;
 }
